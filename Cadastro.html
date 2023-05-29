@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="shortcut icon" href="Fotos Site Receita/favicon.ico" type="image/x-icon">
+    <title>Miredia Cadastro</title>
+    <style>
+        label {
+            text-align: right ;
+            width: 140px;
+            display: inline-block;
+        }
+        
+        body {
+            background:rgb(255, 206, 100);
+        }
+        
+        footer    {
+            text-align: center;
+            padding: 15px;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid px-0" >
+
+        <nav class="navbar navbar-expand-lg ">
+        <img src="Fotos Site Receita\logo.png" alt="" height="50" width="50" >    
+            <a class="navbar-brand" href="Miredia.html">Miredia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="Home receitas.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Site cringe receitas.html">Receitas</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastro</a>
+                </li>  
+            </ul>
+            </div>
+    </div>
+    <div>
+        <p style="margin: 20px;">Conte-nos um pouco sobre você, faça seu cadastro gratuito e receba aviso sobre as nossas novidades.<br>
+        Seus dados só serão armazenados e NUNCA negociados ou divulgados de forma alguma. Conforme a Lei Geral de Proteção de Dados Pessoais (LGPD), Lei n° 13.709/2018.
+        </p>
+    </div>
+    <!-- inicio do formulário -->
+    <form action="colocar email aqui" method="post">
+        
+        <div>
+            <label style=" text-indent: 20px"; for="nome">Nome:</label>
+            <input type="text" id="nome" size="40" maxlength="40" required />
+        </div>
+        <div>
+            <label for="profissao">Profissão:  </label>
+            <input type="text" id="profissao" required/>
+        </div>
+        <div>
+            <label for="data nascim">Data Nascimento:  </label>
+            <input type="date" id="data nascim" required/>
+        </div>
+        <div>
+            <label for="telef">Telefone:  </label>
+            <input type="tel" id="telef" name="telef" placeholder="xx-9-1234-5678" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}" required>
+            <label for="email">E-mail:  </label>
+            <input type="email" id="email" required/>
+        </div><br>
+        <label for="Estado">Estado:</label>
+        <select name="Estado" id="Estado">
+            <option value="null">Estados</option> 
+            <option value="ac">Acre</option> 
+            <option value="al">Alagoas</option> 
+            <option value="am">Amazonas</option> 
+            <option value="ap">Amapá</option> 
+            <option value="ba">Bahia</option> 
+            <option value="ce">Ceará</option> 
+            <option value="df">Distrito Federal</option> 
+            <option value="es">Espírito Santo</option> 
+            <option value="go">Goiás</option> 
+            <option value="ma">Maranhão</option> 
+            <option value="mt">Mato Grosso</option> 
+            <option value="ms">Mato Grosso do Sul</option> 
+            <option value="mg">Minas Gerais</option> 
+            <option value="pa">Pará</option> 
+            <option value="pb">Paraíba</option> 
+            <option value="pr">Paraná</option> 
+            <option value="pe">Pernambuco</option> 
+            <option value="pi">Piauí</option> 
+            <option value="rj">Rio de Janeiro</option> 
+            <option value="rn">Rio Grande do Norte</option> 
+            <option value="ro">Rondônia</option> 
+            <option value="rs">Rio Grande do Sul</option> 
+            <option value="rr">Roraima</option> 
+            <option value="sc">Santa Catarina</option> 
+            <option value="se">Sergipe</option> 
+            <option value="sp">São Paulo</option> 
+            <option value="to">Tocantins</option> 
+        </select>
+        <div>
+            <label for="cidade">Cidade:  </label>
+            <input type="text" id="cidade" required/>
+        </div>
+        <div>
+            <br>
+            <label for="rua">Endereço Rua:  </label>
+            <input type="text" id="rua" required/>
+            <label for="numero">Num:</label>
+            <input type="number" id="numero" min="0" max="99999">
+        </div>
+        <div>
+            <label for="cep">CEP:  </label>
+            <input type="number" id="cep" min="0" placeholder="99.234-789" pattern="[0-9]{2}.[0-9]{3}-[0-9]{3}" required>
+        </div>
+        <div>
+            <br>
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg" name="msg" rows="3" cols="50"></textarea>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar"/>
+        </div>
+    </form>
+    
+</body>
+</html>
